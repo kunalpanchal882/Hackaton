@@ -10,7 +10,8 @@ export const userSlice = createSlice({
     reducers:{
         loaduser:(state,action) => {
             state.data =action.payload
-            console.log(action); 
+            console.log(action);
+            
         }
     }
 })
