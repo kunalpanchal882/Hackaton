@@ -5,13 +5,15 @@ import { useNavigate } from "react-router-dom";
 import { useRef } from "react";
 import { useEffect } from "react";
 import gsap from "gsap";
+import { asynloginuser } from "../store/actions/userAction";
+import { useDispatch } from "react-redux";
 const Login = () => {
   const { register, handleSubmit } = useForm();
   const loginRef = useRef(null)
-
+  const dispatch = useDispatch()
+  
   const LoginHandler = (user) => {
-    user.id = nanoid();
-    console.log(user);
+    dispatch(asynloginuser(user))
   };
 
   useEffect(() =>{
@@ -57,8 +59,8 @@ className="relative w-full h-screen bg-white overflow-x-auto">
     <section className="flex flex-col justify-center py-8 w-full px-4 sm:px-8  min:w-1/2 min-h-auto">
       <form className="flex flex-col gap-4 w-full px-[1.2rem]" onSubmit={handleSubmit(LoginHandler)}>
         <h1 className=" font-semibold text-[clamp(1.3rem,2vw,2rem)] mb-[1.2rem]">Log in</h1>
-        <label className="opacity-60">USERNAME</label>
-        <input {...register("username")} className="outline-0 border-b p-2" type="text" placeholder="Enter your name" />
+        <label className="opacity-60">E-mail</label>
+        <input {...register("email")} className="outline-0 border-b p-2" type="email" placeholder="Enter your Email" />
         <label className="opacity-60">PASSWORD</label>
         <input {...register("password")} className="outline-0 border-b p-2" type="password" placeholder="Enter your password" />
         <div className="checked flex items-center gap-2 mt-2">

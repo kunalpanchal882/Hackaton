@@ -49,7 +49,7 @@ const Menu = forwardRef((props,ref) => {
     >
       <div className="flex flex-col gap-4  bg-zinc-800   p-4 w-full w-full text-white">
         <button>
-          <HiX ref={iconref} className="text-[clamp(2.1rem,6vw,4rem)] bg-black rounded-full text-white p-1 " />
+          <HiX onClick={closemenuHandler} ref={iconref} className="text-[clamp(2.1rem,6vw,4rem)] bg-black rounded-full text-white p-1 " />
         </button>
         <div
           

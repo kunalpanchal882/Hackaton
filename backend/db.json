@@ -3,8 +3,16 @@
     {
       "id": "jkdskfsdfjn",
       "username": "kunal",
-      "email": "jndo@gmail.com",
-      "password": "12345"
+      "email": "kunal@gmail.com",
+      "password": "12345",
+      "isAdmin": true
+    },
+    {
+      "id": "TpxR6K_MLADTKPq488kJb",
+      "username": "lakshay",
+      "email": "fake@gmail.com",
+      "password": "12345",
+      "isAdim": false
     }
   ],
   "products": [
@@ -21,5 +29,5 @@
       }
     }
   ],
-  "cart": []
+  "carts": []
 }

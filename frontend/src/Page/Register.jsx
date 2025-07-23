@@ -5,13 +5,20 @@ import { useNavigate } from "react-router-dom";
 import gsap from "gsap";
 import { useEffect } from "react";
 import { useRef } from "react";
+import { asynregisteruser } from "../store/actions/userAction";
+import { useDispatch } from "react-redux";
 const Register = () => {
   const { register, handleSubmit } = useForm();
   const registerRef = useRef(null);
+  const dispatch = useDispatch()
+  const navigate = useNavigate();
 
-  const LoginHandler = (user) => {
+  const registerHandler = (user) => {
     user.id = nanoid();
+    user.isAdim = false,
     console.log(user);
+    dispatch(asynregisteruser(user))
+    navigate("/login")
   };
 
   useEffect(() =>{
@@ -23,7 +30,7 @@ const Register = () => {
     })
   },[])
 
-  const navigate = useNavigate();
+  
 
   const goToLogin = () => {
     navigate("/login");
@@ -61,7 +68,7 @@ const Register = () => {
         <section className="flex flex-col justify-center py-8 w-full px-4 sm:px-8  min:w-1/2 min-h-auto">
           <form
             className="flex flex-col gap-4 w-full px-[1.2rem]"
-            onSubmit={handleSubmit(LoginHandler)}
+            onSubmit={handleSubmit(registerHandler)}
           >
             <h1 className=" font-semibold text-[clamp(1.3rem,2vw,2rem)] mb-[1.2rem]">
               Registyer Here
@@ -72,6 +79,13 @@ const Register = () => {
               className="outline-0 border-b p-2"
               type="text"
               placeholder="Enter your name"
+            />
+            <label className="opacity-60">E-Mail</label>
+            <input
+              {...register("email")}
+              className="outline-0 border-b p-2"
+              type="text"
+              placeholder="Enter your E-mail"
             />
             <label className="opacity-60">PASSWORD</label>
             <input
