@@ -9,8 +9,8 @@ const About = () => {
     const leftimgRef = useRef(null);
     const rightimgRef = useRef(null);
     const lefttextRef = useRef(null);
-    const pararef = useRef(null);
-    const buyref = useRef(null);
+    // const pararef = useRef(null);
+    // const buyref = useRef(null);
 
   useEffect(() => {
     gsap.to(leftimgRef.current, {
@@ -60,68 +60,68 @@ const About = () => {
     });
   },[]);
 
-  useEffect(() => {
-    gsap.from(lefttextRef.current, {
-      duration: 2,
-    //   opacity:0,
-      x:-100,
-      scrollTrigger: {
-        trigger: lefttextRef.current,
-        scroller: "body",
-        // markers: true,
-        start: "top 60%",
-        end: "top 50%",
-        scrub: 2,
-      },
-    });
-  },[]);
+  // useEffect(() => {
+  //   gsap.from(lefttextRef.current, {
+  //     duration: 2,
+  //   //   opacity:0,
+  //     x:-100,
+  //     scrollTrigger: {
+  //       trigger: lefttextRef.current,
+  //       scroller: "body",
+  //       // markers: true,
+  //       start: "top 60%",
+  //       end: "top 50%",
+  //       scrub: 2,
+  //     },
+  //   });
+  // },[]);
 
-  useEffect(() => {
-    gsap.from(pararef.current, {
-      duration: 2,
-      scale:0,
-      x:-100,
-    opacity:"30rem",
-      scrollTrigger: {
-        trigger: pararef.current,
-        scroller: "body",
-        // markers: true,
-        start: "top 60%",
-        end: "top 50%",
-        scrub: 2,
-      },
-    });
-  },[]);
+  // useEffect(() => {
+  //   gsap.from(pararef.current, {
+  //     duration: 2,
+  //     scale:0,
+  //     x:-100,
+  //   opacity:"30rem",
+  //     scrollTrigger: {
+  //       trigger: pararef.current,
+  //       scroller: "body",
+  //       // markers: true,
+  //       start: "top 60%",
+  //       end: "top 50%",
+  //       scrub: 2,
+  //     },
+  //   });
+  // },[]);
 
-   useEffect(() => {
-    gsap.from(buyref.current, {
-      duration: 1,
-      scale:0,
-      x:-100,
-    opacity:"30rem",
-      scrollTrigger: {
-        trigger: buyref.current,
-        scroller: "body",
-        // markers: true,
-        start: "top 80%",
-        end: "top 20%",
-        scrub: 2,
-      },
-    });
-  },[]);
+  //  useEffect(() => {
+  //   gsap.from(buyref.current, {
+  //     duration: 1,
+  //     scale:0,
+  //     x:-100,
+  //   opacity:"30rem",
+  //     scrollTrigger: {
+  //       trigger: buyref.current,
+  //       scroller: "body",
+  //       // markers: true,
+  //       start: "top 80%",
+  //       end: "top 20%",
+  //       scrub: 2,
+  //     },
+  //   });
+  // },[]);
 
   return (
-    <section className="w-full min-h-screen md:flex md:justify-between items-center px-4 md:px-6 py-6">
+    <section className="w-full md:min-h-screen md:flex md:justify-between items-center px-4 md:px-6 py-6">
       {/* TEXT SECTION */}
       <div className=" flex flex-col gap-[0.4rem] md:w-1/2 mt-0 md-gap-0">
         <h1 
-        ref={lefttextRef}
+        // ref={lefttextRef}
         className=" text-[3rem] tracking-tight font-bold">
           BEHIND THE BOTTLE
         </h1>
 
         <p
-        ref={pararef} 
+        // ref={pararef} 
         className="text-[1.2rem] font-semibold opacity-70 mb-2">
           Prime isn’t just a drink — it’s a mindset. We’re built for those who
           move fast, dream big, and live loud. From game changers to go-getters,
@@ -131,7 +131,7 @@ const About = () => {
         </p>
 
         <div 
-        ref={buyref} 
+        // ref={buyref} 
         className="w-fit bg-zinc-500 rounded-lg px-4 py-2 font-semibold text-white text-sm sm:text-base shadow-md hover:bg-zinc-600 transition cursor-pointer">
           BUY NOW
         </div>

@@ -1,5 +1,10 @@
 import { motion } from "framer-motion";
+// import { interpolate } from "gsap";
 import { FiAlignJustify } from "react-icons/fi";
+import { NavLink } from "react-router-dom";
+import MobileMenu from "./Menu";
+import { useRef, useState } from "react";
+useState
 
 const containerVariants = {
   hidden: {},
@@ -39,6 +44,13 @@ const letterVariants = {
 
 const Navbar = () => {
   const brand = "PRIME";
+  const menuRef = useRef()
+
+    const handleOpenMenu = () => {
+    if (menuRef.current) {
+      menuRef.current.openMenu(); // call method defined in Menu
+    }
+  };
 
   return (
     <motion.div
@@ -48,7 +60,7 @@ const Navbar = () => {
       animate="show"
     >
       {/* Left Icon */}
-      <motion.div className="text-[2.3rem]" variants={itemVariants}>
+      <motion.div className="text-[2.3rem]" variants={itemVariants} onClick={handleOpenMenu}>
         <FiAlignJustify />
       </motion.div>
 
@@ -69,10 +81,17 @@ const Navbar = () => {
       </motion.div>
 
       {/* Right Button */}
-      <motion.div variants={itemVariants} className="bg-zinc-500 rounded-lg px-3 py-[0.8] sm:px-[0.6] sm:py-[0.5] md:px-[-0.5] md:py-[0.6] font-semibold text-white text-[0.75rem] sm:text-[0.85rem] md:text-[1rem] shadow-md hover:bg-zinc-600 transition">
-        <h1 className="text-[0.8rem] py-[0.5rem] px-[0.6rem]">BUY NOW</h1>
+      <motion.div variants={itemVariants}>
+        <NavLink
+          to="/product"
+          className="bg-zinc-500 rounded-lg px-3 py-2 font-semibold text-white text-sm shadow-md hover:bg-zinc-600 transition"
+        >
+          BUY NOW
+        </NavLink>
       </motion.div>
+      <MobileMenu ref={menuRef} />
     </motion.div>
+    
   );
 };
 

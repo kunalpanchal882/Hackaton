@@ -23,7 +23,7 @@ const Showbottle = () => {
   }, [bottleImages.length]);
 
   return (
-    <div className="justify-items-center mt-[0] h-auto relative  flex items-center justify-center bg-white overflow-hidden">
+    <div className="justify-items-center relative  flex items-center justify-center bg-white overflow-hidden">
       {/* PRIME ENERGY TEXT ANIMATION */}
       <motion.div
         initial={{ x: -300, opacity: 0 }}
@@ -35,13 +35,13 @@ const Showbottle = () => {
       </motion.div>
 
       {/* IMAGE ANIMATION */}
-      <div className="relative z-10 w-[70%] h-[25.7rem] max-w-[18rem] sm:max-w-[24rem] md:max-w-[28rem] lg:max-w-[32rem] xl:max-w-[36rem]">
+      <div className="relative z-10 w-[70%] w-full h-auto  max-w-[18rem] sm:max-w-[24rem] md:max-w-[28rem] lg:max-w-[32rem] xl:max-w-[36rem]">
         <AnimatePresence mode="wait">
           <motion.img
             key={currentIndex}
             src={bottleImages[currentIndex]}
             alt="Prime Bottle"
-            className="h-full object-contain mx-auto"
+            className="w-full h-auto object-contain  mx-auto"
             initial={
               isFirstRender.current
                 ? { y: -300, opacity: 0 } // First time: from top
