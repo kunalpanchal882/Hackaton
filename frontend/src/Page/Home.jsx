@@ -22,7 +22,7 @@ const Home = () => {
       <ScrollingText/>
       <SplashCursor />
       <Bottom/>
-      <LandingPage/>
+
     </div>
   )
 }

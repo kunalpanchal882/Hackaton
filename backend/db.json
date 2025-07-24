@@ -7,7 +7,19 @@
       "password": "8595",
       "isAdmin": true,
       "Email": "kunal@gmail.com",
-      "cart": []
+      "cart": [
+        {
+          "product": {
+            "id": "2",
+            "title": "Hydration-WWE 16.9oz",
+            "price": 109.95,
+            "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+            "category": "men's clothing",
+            "image": "https://cdn.destinilocators.com/prime/images/b3c8de53895c18964227c62f1c3c43a4-300x300.png"
+          },
+          "quantity": 1
+        }
+      ]
     },
     {
       "id": "TpxR6K_MLADTKPq488kJb",
