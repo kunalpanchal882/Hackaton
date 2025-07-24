@@ -14,6 +14,7 @@ const Login = () => {
   
   const LoginHandler = (user) => {
     dispatch(asynloginuser(user))
+    navigate("/home")
   };
 
   useEffect(() =>{

@@ -4,29 +4,194 @@
       "id": "jkdskfsdfjn",
       "username": "kunal",
       "email": "kunal@gmail.com",
-      "password": "12345",
-      "isAdmin": true
+      "password": "8595",
+      "isAdmin": true,
+      "Email": "kunal@gmail.com",
+      "cart": []
     },
     {
       "id": "TpxR6K_MLADTKPq488kJb",
       "username": "lakshay",
       "email": "fake@gmail.com",
       "password": "12345",
-      "isAdim": false
+      "isAdim": false,
+      "cart": [
+        {
+          "product": {
+            "id": "1",
+            "title": "Energy-Dripsicle 16oZ",
+            "price": "222",
+            "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+            "category": "men's clothing",
+            "image": "https://cdn.destinilocators.com/prime/images/8883c08a071ed43993486e1d3162bfb6-300x300.png",
+            "catogory": "ice-pop"
+          },
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "yICfMhNLEhg0AWKzLn0RA",
+      "username": "kunalp",
+      "email": "panchalkunal2002@gmail.com",
+      "password": "9876",
+      "isAdim": false,
+      "cart": []
     }
   ],
   "products": [
     {
-      "id": 1,
-      "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+      "id": "1",
+      "title": "Energy-Dripsicle 16oZ",
+      "price": "222",
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "men's clothing",
+      "image": "https://cdn.destinilocators.com/prime/images/8883c08a071ed43993486e1d3162bfb6-300x300.png",
+      "catogory": "ice-pop"
+    },
+    {
+      "id": "2",
+      "title": "Hydration-WWE 16.9oz",
       "price": 109.95,
       "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
       "category": "men's clothing",
-      "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
-      "rating": {
-        "rate": 3.9,
-        "count": 120
-      }
+      "image": "https://cdn.destinilocators.com/prime/images/b3c8de53895c18964227c62f1c3c43a4-300x300.png"
+    },
+    {
+      "id": "3",
+      "title": "Hydration-Blue Raspberry 16.9oz",
+      "price": 109.95,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "men's clothing",
+      "image": "https://cdn.destinilocators.com/prime/images/6fa44c25e1f921c728e38eab670e3fb1-300x300.png"
+    },
+    {
+      "id": "4",
+      "title": "Hydration-Strawberry Banana 16.0oz",
+      "price": 109.95,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "men's clothing",
+      "image": "https://cdn.destinilocators.com/prime/images/a133317ada56857af0dc7efca9aec5e4-300x300.png"
+    },
+    {
+      "id": "5",
+      "title": "Hydration-WWE 16.9oz",
+      "price": 109.95,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "men's clothing",
+      "image": "https://cdn.destinilocators.com/prime/images/8b4a4d2f5caff00768b4a7de61820fc2-300x300.png"
+    },
+    {
+      "id": "6",
+      "title": "Hydration-Lemonade 16.9oz",
+      "price": 109.95,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "men's clothing",
+      "image": "https://cdn.destinilocators.com/prime/images/d44de5b8dbdaa4c1196c9b37a92dabba-300x300.png"
+    },
+    {
+      "id": "7",
+      "title": "Hydration-Lemon Lime 16.9oz",
+      "price": 109.95,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "men's clothing",
+      "image": "https://cdn.destinilocators.com/prime/images/2a8c6941111ed60431cb3127dcf75881-300x300.png"
+    },
+    {
+      "id": "8",
+      "title": "Hydration-Meta Moon 16.9oz",
+      "price": 109.95,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "men's clothing",
+      "image": "https://cdn.destinilocators.com/prime/images/735bf43ee083d1abceffb87fd08dcdc5-300x300.png"
+    },
+    {
+      "id": "10",
+      "title": "Hydration-Berry Freeze 16.9oz",
+      "price": 109.95,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "men's clothing",
+      "image": "https://cdn.destinilocators.com/prime/images/ad24156e97ecbe7d3745dde4824320f4-300x300.png"
+    },
+    {
+      "id": "11",
+      "title": "Ice Hydration-Red Chill 16.9oz",
+      "price": 109.95,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "men's clothing",
+      "image": "https://cdn.destinilocators.com/prime/images/a92a0ed1ec0ebef95ccff8ecb6e60854-300x300.png"
+    },
+    {
+      "id": "12",
+      "title": "Ice Hydration-Blue Chill 16.9oz",
+      "price": 109.95,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "men's clothing",
+      "image": "https://cdn.destinilocators.com/prime/images/d62426619b0ecaeb8dd9c856aa89e924-300x300.png"
+    },
+    {
+      "id": "13",
+      "title": "Hydration-Orange Kream 16.9oz",
+      "price": 109.95,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "men's clothing",
+      "image": "https://cdn.destinilocators.com/prime/images/3c03c2072ae86141ebd54e3179802d6b-300x300.png"
+    },
+    {
+      "id": "14",
+      "title": "PRIME COLLECTOR SERIES",
+      "price": 109.95,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "men's clothing",
+      "image": "https://cdn.destinilocators.com/prime/images/7f58c4f0f63eec3fe34b7f88d99d712f-300x300.png"
+    },
+    {
+      "id": "15",
+      "title": "PRIME COLLECTOR SERIES",
+      "price": 109.95,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "men's clothing",
+      "image": "https://drinkprime.com/cdn/shop/files/Sournova_Web_DropBanner_PDP_Front_2000x2000_ffba587e-02f2-491a-a375-5f5b3e7f2eb8_400x.png?v=1744126206"
+    },
+    {
+      "id": "16",
+      "title": "PRIME COLLECTOR SERIES",
+      "price": 109.95,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "men's clothing",
+      "image": "https://drinkprime.com/cdn/shop/files/Prime_hydration_1serve_16.9oz_US_PesoPluma_00000_400x.png?v=1742393763"
+    },
+    {
+      "id": "17",
+      "title": "PRIME COLLECTOR SERIES",
+      "price": 109.95,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "men's clothing",
+      "image": "https://drinkprime.com/cdn/shop/files/PrimeHydration_US_1serve_FutureFreeze_00000_400x.png?v=1738603072"
+    },
+    {
+      "id": "18",
+      "title": "PRIME COLLECTOR SERIES",
+      "price": 109.95,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "men's clothing",
+      "image": "https://drinkprime.com/cdn/shop/products/PrimeHydration_1serve_IcePop_0000_400x.png?v=1656076690"
+    },
+    {
+      "id": "19",
+      "title": "PRIME COLLECTOR SERIES",
+      "price": 109.95,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "men's clothing",
+      "image": "https://drinkprime.com/cdn/shop/files/Prime_hydration_1serve_16.9oz_US_CherryFreeze_Fortis_00000_400x.png?v=1745589968"
+    },
+    {
+      "id": "uoLokDQq_R_2hacskwJCl",
+      "image": "https://cdn.destinilocators.com/prime/images/76ae77da23e5e8fac8911c1883817870-300x300.png",
+      "Title": "Hyration+sticky",
+      "price": "120",
+      "description": "",
+      "catogory": "future-freeze"
     }
   ],
   "carts": []

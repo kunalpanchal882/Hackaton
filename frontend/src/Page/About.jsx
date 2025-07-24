@@ -60,58 +60,11 @@ const About = () => {
     });
   },[]);
 
-  // useEffect(() => {
-  //   gsap.from(lefttextRef.current, {
-  //     duration: 2,
-  //   //   opacity:0,
-  //     x:-100,
-  //     scrollTrigger: {
-  //       trigger: lefttextRef.current,
-  //       scroller: "body",
-  //       // markers: true,
-  //       start: "top 60%",
-  //       end: "top 50%",
-  //       scrub: 2,
-  //     },
-  //   });
-  // },[]);
 
-  // useEffect(() => {
-  //   gsap.from(pararef.current, {
-  //     duration: 2,
-  //     scale:0,
-  //     x:-100,
-  //   opacity:"30rem",
-  //     scrollTrigger: {
-  //       trigger: pararef.current,
-  //       scroller: "body",
-  //       // markers: true,
-  //       start: "top 60%",
-  //       end: "top 50%",
-  //       scrub: 2,
-  //     },
-  //   });
-  // },[]);
-
-  //  useEffect(() => {
-  //   gsap.from(buyref.current, {
-  //     duration: 1,
-  //     scale:0,
-  //     x:-100,
-  //   opacity:"30rem",
-  //     scrollTrigger: {
-  //       trigger: buyref.current,
-  //       scroller: "body",
-  //       // markers: true,
-  //       start: "top 80%",
-  //       end: "top 20%",
-  //       scrub: 2,
-  //     },
-  //   });
-  // },[]);
 
   return (
     <section className="w-full md:min-h-screen md:flex md:justify-between items-center px-4 md:px-6 py-6">
+      
       {/* TEXT SECTION */}
       <div className=" flex flex-col gap-[0.4rem] md:w-1/2 mt-0 md-gap-0">
         <h1 
@@ -136,7 +89,7 @@ const About = () => {
           BUY NOW
         </div>
       </div>
-
+      
       {/* IMAGE SECTION */}
       <div className="md:w-1/2 w-full mt-8 md:mt-0 flex justify-center relative">
         {/* Left bottle (behind) */}
