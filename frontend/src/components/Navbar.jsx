@@ -58,7 +58,7 @@ const Navbar = () => {
   return (
     <>
       <motion.div
-        className="flex justify-between items-center px-4 sm:px-6 md:px-8 py-3 sm:py-4 md:py-5"
+        className="flex  rounded-lg justify-between items-center px-4 sm:px-6 md:px-8 py-3 sm:py-4 md:py-5"
         variants={containerVariants}
         initial="hidden"
         animate="show"

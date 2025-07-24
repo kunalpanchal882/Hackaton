@@ -12,13 +12,13 @@ const Home = () => {
 
 
   return (
-    <div className="relative m-[1rem] w-auto h-auto">
+    <div className=" relative m-[1rem] w-auto h-auto">
       <Menu />
       <Navbar/>
       <Showbottle/>
       <About/>
-      <ScrollingText/>
       <Product/>
+      <ScrollingText/>
       <SplashCursor />
       <Bottom/>
     </div>

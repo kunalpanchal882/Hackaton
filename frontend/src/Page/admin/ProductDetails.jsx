@@ -8,6 +8,8 @@ import { useForm } from "react-hook-form";
 import {asyndeleteproducts, asynupdateproducts,} from "../../store/actions/productAction";
 import { useNavigate } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
+import { asynupdateuser } from "../../store/actions/userAction";
+
 // import useRef from 'useRef'
 const ProductDetail = () => {
   const { id } = useParams();
@@ -38,6 +40,31 @@ const ProductDetail = () => {
   //     </div>
   //   );
   // }
+
+  const addToCartHandler = (product) => {
+      if (!users || !users.cart) {
+        console.error("User or cart is not available");
+        return;
+      }
+  
+      const copyuser = { ...users, cart: [...users.cart] };
+      const checkcart = copyuser.cart.findIndex(
+        (c) => c?.product?.id == product.id
+      );
+  
+      if (checkcart === -1) {
+        copyuser.cart.push({ product, quantity: 1 });
+      } else {
+        copyuser.cart[checkcart] = {
+          product,
+          quantity: copyuser.cart[checkcart].quantity + 1,
+        };
+      }
+  
+      dispatch(asynupdateuser(copyuser.id, copyuser));
+
+      navigate("/cart")
+    };
 
   const updateproductHandler = (product) => {
     dispatch(asynupdateproducts(id, product));
@@ -86,7 +113,7 @@ const ProductDetail = () => {
               <FaStar />
               <FaRegStar />
             </div>
-            <button className="bg-zinc-500 rounded-lg px-3 py-2 font-semibold text-white text-sm shadow-md hover:bg-zinc-500 transition">
+            <button  onClick={() => addToCartHandler(product)} className="bg-zinc-500 rounded-lg px-3 py-2 font-semibold text-white text-sm shadow-md hover:bg-zinc-500 transition">
               Add to Cart
             </button>
           </motion.div>

@@ -91,7 +91,7 @@ const Product = () => {
       {showBack && (
         <button
           onClick={goBack}
-          className="ml-4 mt-4 px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-600 transition duration-300"
+          className="ml-4 mt-4 px-4 py-2 bg-gray-800 font-bold text-white rounded hover:bg-gray-600 transition duration-300"
         >
           <IoArrowBack />
         </button>
@@ -100,7 +100,7 @@ const Product = () => {
       {/* Rotating Heading */}
       <RotatingText
         texts={["PRODUCT", "PRIME", "HYDRATION", "COOL"]}
-        mainClassName="px-2 sm:px-2 md:px-3 text-black overflow-hidden py-5 sm:py-1 md:py-8 justify-center rounded-lg text-[4rem]"
+        mainClassName="px-2 sm:px-2 md:px-3 text-black overflow-hidden py-5 sm:py-1 md:py-8 justify-center rounded-lg font-bold text-[4rem]"
         staggerFrom={"last"}
         initial={{ y: "100%" }}
         animate={{ y: 0 }}

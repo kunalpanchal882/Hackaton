@@ -53,7 +53,7 @@ const Menu = forwardRef((props, ref) => {
   return (
     <section
       ref={menuref}
-      className="fixed top-[-100%] left-0 w-full z-50 bg-white overflow-y-auto max-h-screen"
+      className="fixed  top-[-100%] left-0 w-full z-50 bg-white overflow-y-auto max-h-screen"
     >
       <div className="flex flex-col gap-4 bg-zinc-800 p-4 w-full text-white">
         <button>

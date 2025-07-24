@@ -15,20 +15,7 @@
       "email": "fake@gmail.com",
       "password": "12345",
       "isAdim": false,
-      "cart": [
-        {
-          "product": {
-            "id": "1",
-            "title": "Energy-Dripsicle 16oZ",
-            "price": "222",
-            "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
-            "category": "men's clothing",
-            "image": "https://cdn.destinilocators.com/prime/images/8883c08a071ed43993486e1d3162bfb6-300x300.png",
-            "catogory": "ice-pop"
-          },
-          "quantity": 1
-        }
-      ]
+      "cart": []
     },
     {
       "id": "yICfMhNLEhg0AWKzLn0RA",
