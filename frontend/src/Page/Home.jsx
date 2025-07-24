@@ -7,6 +7,7 @@ import Login from "./Login"
 import Product from "./Product"
 import SplashCursor from '../components/SplashCursor'
 import Bottom from "../components/Bottom"
+import LandingPage from "../components/LandingPage"
 
 const Home = () => {
 
@@ -21,6 +22,7 @@ const Home = () => {
       <ScrollingText/>
       <SplashCursor />
       <Bottom/>
+      <LandingPage/>
     </div>
   )
 }

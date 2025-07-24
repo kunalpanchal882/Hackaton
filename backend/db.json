@@ -24,6 +24,13 @@
       "password": "9876",
       "isAdim": false,
       "cart": []
+    },
+    {
+      "id": "MS4gCf44MKLGPN9D18oEf",
+      "username": "",
+      "email": "",
+      "password": "",
+      "isAdim": false
     }
   ],
   "products": [

@@ -10,6 +10,7 @@ import ProductDetail from '../Page/admin/ProductDetails'
 import { useSelector } from 'react-redux'
 import UserProfile from '../Page/user/UserProfile'
 import Cart from '../Page/Cart'
+import LoadingPage from '../components/LandingPage'
 const Mainrouter = () => {
 
 
@@ -19,7 +20,7 @@ const Mainrouter = () => {
   return (
     <Routes>
         <Route path="/home" element={<Home />} />
-        <Route path="/" element={<Home />} />
+         <Route path="/" element={<LoadingPage />} /> 
         <Route path="/products" element={<Product />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
