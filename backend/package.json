@@ -9,8 +9,8 @@
   "scripts": {
     "postinstall": "chmod +x node_modules/.bin/json-server 2>/dev/null || true",
     "prestart": "node check-node-version.js",
-    "start": "json-server --watch db.json --port ${PORT:-3000} --host 0.0.0.0",
-    "dev": "npm run start",
+    "start": "node index.js",
+    "dev": "node index.js",
     "setup": "./setup.sh",
     "vercel-build": "echo 'Building for Vercel'",
     "test": "echo \"Error: no test specified\" && exit 1"
