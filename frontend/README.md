@@ -1,12 +1,65 @@
-# React + Vite
+# 🧃 Prime Bottle - React Frontend Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a **Prime Bottle-inspired eCommerce frontend** built using **React**. The website features a modern, animated UI with shopping and admin functionalities. Users can browse products, register/login, manage their profile, and add products to the cart. Admins can access a dashboard to add or manage products.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+### 🛍️ User Side:
+- **User Registration & Login**
+- **View Profile Information**
+- **Browse Products with Dynamic UI**
+- **Add to Cart Functionality**
+- **Responsive Design (Mobile/Desktop Friendly)**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🛠️ Admin Side:
+- **Admin Dashboard**
+- **Add / Manage Products**
+- **Control over product listings**
+
+---
+
+## 🎨 Technologies Used
+
+- **React.js**
+- **React Router DOM** – For client-side routing
+- **Tailwind CSS** – For styling
+- **Framer Motion** – For smooth component animations
+- **GSAP (GreenSock Animation Platform)** – For advanced animation transitions
+- **Reactbit UI Library** – Custom UI components
+- **Context API / Redux (if applicable)** – For state management
+
+---
+
+## 📸 Animations
+
+The site uses **GSAP** and **Framer Motion** to animate elements, bottle transitions, and page navigation, making the experience lively and premium – matching the vibe of a high-end beverage brand.
+
+---
+
+## 🧪 Pages & Components
+
+- `Home.jsx`
+- `ProductPage.jsx`
+- `Login.jsx` / `Register.jsx`
+- `Profile.jsx`
+- `AdminDashboard.jsx`
+- `AddProduct.jsx`
+- `Cart.jsx`
+- Reusable components: `Navbar`, `Footer`, `ProductCard`, `BottleShowcase`, etc.
+
+---
+
+## 🔧 Setup Instructions
+
+```bash
+# Clone the repo
+git clone https://github.com/yourusername/prime-bottle.git
+cd prime-bottle
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
